@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Frontend Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div>
+        <h1>Hello World</h1>
+        <p>This is a frontend tutorial class</p>
+        <a href="https://www.nairaland.com">click me to go to nairaland</a>
+
+        <img src="https://bit.ly/fcc-relaxing-cat" alt="this image is missing">
+        <!-- list tag
+        we have ordered list and unordered list -->
+        <span>
+            <ol>
+                <li><strong>Habdorl</strong></li>
+                <li><em>Abila</em></li>
+                <li>Virtuous</li>
+            </ol>
+        </span>
+        <br>
+        <hr>
+        <span>
+            <ul>
+                <li>Habdorl</li>
+                <li>Virtuous</li>
+                <li>Abila</li>
+            </ul>
+        </span>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>club</th>
+                <th>MP</th>
+                <th>W</th>
+                <th>D</th>
+                <th>L</th>
+                <th>GF</th>
+                <th>GA</th>
+                <th>GD</th>
+                <th>Pts</th>
+            </tr>
+            <tr>
+                <td>ManU</td>
+                <td>39</td>
+                <td>15</td>
+                <td>10</td>
+                <td>1</td>
+                <td>130</td>
+                <td>10</td>
+                <td>110</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>Chelsea</td>
+                <td>30</td>
+                <td>10</td>
+                <td>5</td>
+                <td>0</td>
+                <td>120</td>
+                <td>12</td>
+                <td>100</td>
+                <td>80</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- html table
+             html allow developer to arrange data into rows and column 
+             note : you can have as many as possible row or column in a table just make sure there cell match
+             <input> : element type can be text, number, email, password etc
+             <textarea> : is the same as input element the diffrence is textarea is multi line while input element is single line 
+             <select><option></option></select> tag : iit alwayys use to have multiple options just like you say in different site 
+              that use for male or female questions, using selected in the opening tag is one of the options will make it the default
+              selected options when you loaddd the page.     
+
+              advanced form attribute 
+              required : which will tell the form not to submit if you don't put anything in the feild, it make the feild compulsory
+              placeholder : this is a greyed out text that gave you hint about a feild 
+              min and max : used to limit the number of text or number input 
+            
+             -->
+
+    <!--html forms
+            forms let users input data like login or contact form 
+            form have form tag and you will put the actions and method in your opening tag 
+            the actions is where you want to send your form data after user click the submint button 
+            and the method will either be post or get .. post will hide your data from url 
+            when sending while the get will make ur data be visible on the web .. inside our form element 
+            we will have all our input tag and button -->
+    <div>
+        <form action="" method="post">
+            <input min="4" max="8" type="number" required>
+            <textarea placeholder="your describtion here"></textarea>
+            <select>
+                <option>male</option>
+                <option>female</option>
+                <option>prefer not to say</option>
+            </select>
+            <input type="submit" value="submit">
+
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+<!-- html document explanation 
+ html : root of the document 
+ head : all content here is not visible to user and is also known as 
+        the meta data of the webpage 
+ meta : info like character encoding, viewport size will put here 
+ body : this is the visible part of your webpage      
+-->
+
+
+<!-- the one without the slash is the opening tag 
+while the one with slash is the closing tag.//
+h1 to h6 tag is heading tag and the word size is reduced according 
+ to the number i.e h1 letter will bigger than h2 and so on.
+> p tag is simple paragraph tag.
+> a tag have actions called href that takes the link you are adding to your page.
+> img will take action src that take the link to image and action alt that
+takes information you want to display incase there is an 
+error for user trying to load your image.
+> ol ul li which are simple ordered, unordered and list.
+> br gives space between two tag.
+> hr display a straight line.
+> strong and em make the word you surrond them with to be bold and italic 
+> div tag is a generic block container i.e it is use to surround a section of a  
+webpage you want to group together as a block, anything you surround with div will
+start on the next line unless you said otherwise with your css setting.
+> span tag which is a generic inline container 
+
+-->
