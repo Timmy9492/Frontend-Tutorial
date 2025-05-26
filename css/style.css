@@ -1,0 +1,72 @@
+/* css stands for cascading style sheets, it tells the browser hot to display html content i.e the color, the font, the letter size, the spacing. etc
+think of html as a house with rooms while css is your interior decoration, the picture , the wallpaper, location of your sofa etc 
+CSS SELECTORS : selectors is how you target your html element in css 
+
+ELEMENT OR TAG SELECTORS : this target all the content in the element or tag you specified */
+p{
+    color: red;
+}
+h1{
+    color: yellowgreen;
+}
+img{
+    width: 300px;
+}
+
+
+/* CLASS SELECTOR : this target all the element or tag that contained specified class */
+
+.bg{ 
+    background-color: black;
+    color: white;
+}
+
+/* ID SELECTOR : same work as class selector but id start with # */
+#bg-first{
+    background-color: red;
+    color: yellowgreen;
+}
+
+/* UNIVERSAL SELECTOR : basically target all element */
+
+* {
+    font-size: 20px;
+    background-color: rgb(234, 220, 248);
+    color: rgb(0, 0, 0);
+  }
+
+  /* GROUPING SELECTOR : this is when you target more than one selector or elemnent ot tag at the same time */
+  p,h1,.bg,#bg-first{
+    font-weight: 900;
+  }
+
+  /* COMMON CSS PROPERTIES
+  > color eg color: blue; this change the element text color 
+  > backgroung-color i.e background-color: black; this change the element background color
+  > font-size i.e font-size: 20px; this change the size of an element letter
+  > font-family i.e font-family: verdane; this change the element letter font type
+  > text-align i.e text align: center; this align the element letter to the center or right or left of the page
+  > margin i.e margin: 2px; this give space outside the element
+  > padding i.e padding: 2px; this gives space inside the element 
+  > border i.e border: 1px solid black; add a border to an element 
+  > width/height i.e height: 20px; this gives height or width to the element you select */
+
+  /* UNIT MEASUREMENT IN CSS : WE HAVE TWO TYPES, WE HAVE 
+  ABSOLUTE UNIT AND FLEXIBLE UNIT 
+  > Absolute unit do not scale they are fixed while flexible unit scale and adjust according to the device viewport, parent element or document root
+  * ABSOLUTE UNIT WE HAVE : px i.e pixels, cm i.e centimeters, in i.e inches. pixels is the most commonly used of all absolute unit
+  > FLEXIBLE UNIT IS SAME AS RELATIVE UNIT : % consider parent container 
+                                           : em consider parent font size
+                                           : rem consider document root font size i.e html element
+                                           : vm consider viewport width
+                                           : vh consider full height of the browser window i.e viewport  
+*/
+
+/* Advanced css : it helps us to explore the modern layout tools and visual effect that makes our webpage modern, styling and beautiful.
+1.Flexbox: it means responsive layout i.e it helps you align and distribute space whithin a container, even when screen size change.
+         WHEN TO USE A FLEXBOX: 1 When you want to center things or content
+                                2 To put items or content side by side
+                                3 To make flexible, responsive layouts 
+2. Grid: css grid is for building layout in rows and columns. it is perfect of full page layout, galleries, dashboards and so on 
+3. Transitions: this makes change smooth when a property changes or updates examples like an hover 
+4. Animations: Animations let you create complex efforts with keyframes i.e a step at a time  */

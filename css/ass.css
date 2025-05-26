@@ -1,0 +1,32 @@
+
+*{
+    background-color: rgb(213, 179, 245);
+}
+
+.first{
+    text-decoration-color: aquamarine;
+    font-size: 20em;
+}
+.second{
+    color: blue;
+    font-size: 10em;
+}
+.third{
+    text-decoration-color: brown;
+    font-size: 5em;
+}
+
+#dig{
+    background-color: black;
+    color: whitesmoke;
+    padding: 2em;
+    border: 1px;
+    
+}
+
+.bug{
+    background-color: whitesmoke;
+    color: black;
+    padding: 1em;
+    border: 2px;
+}

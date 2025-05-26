@@ -5,19 +5,31 @@
     <meta charset="UTF-8">
     <title>Frontend Tutorial</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="https://www.nairaland.com">click to go to nairaland</a>
+            <li><a href="premierleague.html">go to premierleague</a>
+            </li>
+            </li>
+          </ul>  
+        </nav>
+    </header>
+    <main> 
     <div>
         <h1>Hello World</h1>
         <p>This is a frontend tutorial class</p>
         <a href="https://www.nairaland.com">click me to go to nairaland</a>
-
+        
         <img src="https://bit.ly/fcc-relaxing-cat" alt="this image is missing">
         <!-- list tag
         we have ordered list and unordered list -->
         <span>
-            <ol>
+            <ol id="bg-first">
                 <li><strong>Habdorl</strong></li>
                 <li><em>Abila</em></li>
                 <li>Virtuous</li>
@@ -33,8 +45,12 @@
             </ul>
         </span>
     </div>
+</main>
+<section>
+   <article><h1>Hello i'm improving </h1></article> 
+</section>
     <div>
-        <table>
+        <table class="bg">
             <tr>
                 <th>club</th>
                 <th>MP</th>
@@ -69,21 +85,22 @@
                 <td>80</td>
             </tr>
         </table>
+        <br>
     </div>
 
     <!-- html table
              html allow developer to arrange data into rows and column 
              note : you can have as many as possible row or column in a table just make sure there cell match
-             <input> : element type can be text, number, email, password etc
-             <textarea> : is the same as input element the diffrence is textarea is multi line while input element is single line 
-             <select><option></option></select> tag : iit alwayys use to have multiple options just like you say in different site 
+            * <input> : element type can be text, number, email, password etc
+            * <textarea> : is the same as input element the diffrence is textarea is multi line while input element is single line 
+            * <select><option></option></select> tag : iit alwayys use to have multiple options just like you say in different site 
               that use for male or female questions, using selected in the opening tag is one of the options will make it the default
               selected options when you loaddd the page.     
 
               advanced form attribute 
-              required : which will tell the form not to submit if you don't put anything in the feild, it make the feild compulsory
-              placeholder : this is a greyed out text that gave you hint about a feild 
-              min and max : used to limit the number of text or number input 
+            >  required : which will tell the form not to submit if you don't put anything in the feild, it make the feild compulsory
+            >  placeholder : this is a greyed out text that gave you hint about a feild 
+            >  min and max : used to limit the number of text or number input 
             
              -->
 
@@ -97,27 +114,39 @@
     <div>
         <form action="" method="post">
             <input min="4" max="8" type="number" required>
+            <br>
             <textarea placeholder="your describtion here"></textarea>
+            <br>
             <select>
                 <option>male</option>
                 <option>female</option>
                 <option>prefer not to say</option>
             </select>
+            <br>
+            <br>
             <input type="submit" value="submit">
 
         </form>
     </div>
-
+<br>
+    <footer>&copy;copyright 2025</footer>
+    <style>
+        /* incase you want your css to be in your html page instead of a new file */
+    </style>
+    <script>
+        // your javascript goes here  incase you don't want a new 
+    </script>
+    <!-- it should be the best practice for you to use a new file for your css and javascript for best code maintainability -->
 </body>
 
 </html>
 
 <!-- html document explanation 
- html : root of the document 
- head : all content here is not visible to user and is also known as 
+ > html : root of the document 
+ > head : all content here is not visible to user and is also known as 
         the meta data of the webpage 
- meta : info like character encoding, viewport size will put here 
- body : this is the visible part of your webpage      
+ > meta : info like character encoding, viewport size will put here 
+ > body : this is the visible part of your webpage      
 -->
 
 
@@ -139,4 +168,29 @@ webpage you want to group together as a block, anything you surround with div wi
 start on the next line unless you said otherwise with your css setting.
 > span tag which is a generic inline container 
 
--->
+
+SEMANTIC HTML : It improve your website SEO RANKING, ACCESSIBILITY, AND MAINTAINABILITY OF YOUR WEBSITE
+* <header> : header tag is the top section of your webpage 
+* <nav> : it's called navigation tag  
+* <main> : This means main content of your webpage  
+* <section> : it's used to section your content of your webpage 
+* <article> : an article is used to wrap a write up section of your webpage, this mostly used by a news website
+* <aside> : aside is basically called a side bar section of your webpage
+* <footer> : just like header, footer is the ending part of your webpage 
+
+HTML ENTITIES : Html entities are used to display some special character 
+entities should always end with ; to separate it from your page wording 
+> &copy : this is used to display the c that's always behind copyright
+> &lt; which means lesser than 
+> &gt; greater than 
+
+COMMENT IN HTML : TO COMMENT IN HTML 
+<!-- comment here  -->
+
+ <!--if you are using vscode you can comment a line with just control / 
+ LINKING EXTERNAL FILES WITH OUR HTML FILES : we might want to link our a javascript or css file with your html or even 
+ import some specific framwork like boostrap 
+
+ <link rel="stylesheet" href="wewewe.com"> this will goes inside your head tag
+ <script src="wewewe.com"></script> : this will goes at the bottom before the closing tag of your body
+ -->

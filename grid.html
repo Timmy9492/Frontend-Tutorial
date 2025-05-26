@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Frontend Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+</head>
+
+<body>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+    
+        .name {
+            background-color: rgb(3, 48, 34);
+            color: rgb(218, 208, 208);
+            padding: 20px;
+            font-size: 25px;
+            text-align: center;
+        }
+    
+        .btn {
+            padding: 10px 20px;
+            background-color: rgb(7, 185, 245);
+            border: none;
+            transition: background-color 0.4s ease;
+        }
+    
+        .btn:hover {
+            background-color: red;
+            color: whitesmoke;
+        }
+    </style>
+    
+    <div class="grid-container">
+        <div class="name">Ayo</div>
+        <div class="name">Bola</div>
+        <div class="name">Chally</div>
+        <div class="name"><input class="btn" type="button" value="Result"></div>
+        <div class="name">David</div>
+        <div class="name">Alabi</div>
+        
+
+
+    <!-- <style>
+       
+        .grid-container {
+            display: grid; /* this turn a container into a grid */
+            grid-template-columns: repeat(4, 1fr); /* this defines grid column layout, we can have it written in 1fr or repeat(3, 1fr) */
+            /* grid-template-rows: 100px auto;  this defines row sizes */
+            gap: 10px; /* this gives space between grid */
+            grid-column: span 2; /* this make name stretch acrros column */
+        }
+        .name{
+            background-color: steelblue;
+            color: whitesmoke;
+            padding: 20px;
+            font-size: 25px;
+            text-align: center;
+        }
+        .btn{
+            padding: 10px 20px;
+            background-color: lightblue;
+            border: none;
+            transition: background-color 0.3s ease; 
+            /* in this above example, the transition is the property name for styling transition, the background-color is the property we want to affect
+            0.3s is the transition duration, ease is the speed curve of the transition we also have linear, ease-in, ease-in-out, ease-out, linear-in,
+            linear-out, linear-in-out value for the 7speed curve */
+        }
+        .btn:hover{
+            background-color: red;
+            color: white;
+        }
+    </style>
+
+    <div class="grid-container">
+        <div class="name">A</div>
+        <div class="name">B</div>
+        <div class="name">C</div>
+        <div class="name">D</div>
+        <div class="name">A</div>
+        <div class="name">B</div>
+        <div class="name">C</div>
+        <div class="name">D</div>
+        <div class="name">A</div>
+        <div class="name">B</div>
+        <div class="name">C</div>
+        <div class="name">D</div>
+        <div class="name">A</div>
+        <div class="name">B</div>
+        <div class="name">C</div>
+        <div class="name"><input class="btn" type="button" value="Hover me"></div> -->
+
+</body>
+
+</html>

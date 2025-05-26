@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Frontend Tutorial</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+</head>
+
+<body>
+    <div class="bounce"></div>
+    <style>
+        .bounce{
+            width: 100px;
+            height: 100px;
+            background-color: crimson;
+            animation: bounce 1s infinite ease-in;
+        }
+
+        @keyframes bounce{ 
+            /* @keyframes define the animation timeline, bounce refer to the animation name, 1s defines the animation duration,
+            infinite define the animation iteration count, alternate is the animation instruction on how it repeate same circle, translateY() is a css function
+            that reposition element vertically on the 2D plane.  */
+            0%{
+                transform: translateY(0);
+            }
+            25%{
+                background-color: yellowgreen;
+                transform: translateX(50px);
+            }
+            50%{
+                background-color: blueviolet;
+                transform: translateX(-50px);
+            } 
+            75%{
+                background-color: blue;
+                transform: translateZ(60px);
+            }
+            100%{
+                transform: translateY(-50px);
+            }
+
+        }
+    </style>
+</body>
+</html>
